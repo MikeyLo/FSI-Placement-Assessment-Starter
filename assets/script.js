@@ -23,6 +23,8 @@ const sugarPlusBtn = document.querySelector('#add-sugar')
 
 const sugarMinusBtn = document.querySelector('#minus-sugar')
 
+const cookieTotal = document.querySelector('#qty-total')
+
 // Code to update name display
 credit.textContent = `Created by ${yourName}`
 
@@ -32,7 +34,7 @@ gbPlusBtn.addEventListener('click', function() {
 console.log('Gingerbread + button was clicked!')
  gb = gb + 1 
  document.getElementById('qty-gb').textContent = gb
-
+ document.getElementById('qty-total').textContent = sugar + cc + gb
        
 // TODO: Write the code to be run when the "+" button for "Gingerbread" is clicked
 })
@@ -44,7 +46,7 @@ gbMinusBtn.addEventListener('click', function() {
     
      gb = gb - 1 
      document.getElementById('qty-gb').textContent = gb
-    
+     document.getElementById('qty-total').textContent = sugar + cc + gb
     })
 
 ccPlusBtn.addEventListener('click', function() {
@@ -52,7 +54,7 @@ ccPlusBtn.addEventListener('click', function() {
     console.log('Chocolate Chip + button was clicked!')
      cc = cc + 1 
      document.getElementById('qty-cc').textContent = cc
-    
+     document.getElementById('qty-total').textContent = sugar + cc + gb
     })
 
 ccMinusBtn.addEventListener('click', function() {
@@ -60,7 +62,7 @@ ccMinusBtn.addEventListener('click', function() {
     console.log('Chocolate Chip - button was clicked!')
      cc = cc - 1 
      document.getElementById('qty-cc').textContent = cc
-    
+     document.getElementById('qty-total').textContent = sugar + cc + gb
     })
 
 sugarPlusBtn.addEventListener('click', function() {
@@ -68,7 +70,7 @@ sugarPlusBtn.addEventListener('click', function() {
     console.log('Sugar Sprinkle + button was clicked!')
      sugar = sugar + 1 
      document.getElementById('qty-sugar').textContent = sugar
-    
+     document.getElementById('qty-total').textContent = sugar + cc + gb
     })
 
 sugarMinusBtn.addEventListener('click', function() {
@@ -76,5 +78,8 @@ sugarMinusBtn.addEventListener('click', function() {
     console.log('Sugar - button was clicked!')
      sugar = sugar - 1 
      document.getElementById('qty-sugar').textContent = sugar
-    
+     document.getElementById('qty-total').textContent = sugar + cc + gb
     })
+
+
+cookieTotal.addEventListener()
